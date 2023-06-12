@@ -1,4 +1,5 @@
-import Head from "next/head";
+import Head from 'next/head';
+import PasswordTest from '@/Components/PasswordTest';
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       </Head>
       <main>
         <h1>Cuidado Digital</h1>
+        <PasswordTest />
       </main>
     </>
   );
