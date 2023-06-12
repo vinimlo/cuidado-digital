@@ -24,7 +24,6 @@ export default function PasswordTest() {
     setPassword(inputValue);
     const zxcvbnResult = zxcvbn(inputValue);
     setResult(zxcvbnResult);
-    console.log(zxcvbnResult);
   };
 
   return (
