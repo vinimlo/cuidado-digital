@@ -28,10 +28,10 @@ export default function PasswordTest() {
 
   return (
     <div>
-      <span>
+      <div>
         Check your password strength with{' '}
         <a href="https://zxcvbn-ts.github.io/zxcvbn/guide/">zxcvbn </a>
-      </span>
+      </div>
       <input type="text" placeholder="Type password..." onChange={handleInputChange} />
       {result && (
         <table className="result">
