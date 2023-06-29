@@ -1,5 +1,5 @@
 import Head from "next/head";
-import EmailTest from "@/components/EmailTest";
+import PasswordTest from "@/components/PasswordTest";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       </Head>
       <main>
         <h1>Cuidado Digital</h1>
-        <EmailTest />
+        <PasswordTest />
       </main>
     </>
   );
