@@ -4,16 +4,10 @@ import { Props } from "@/types";
 import Link from "next/link";
 
 export default function Layout({ children }: Props) {
-
   return (
     <div className={styles.container}>
       <Head>
-        <meta name="description" content="Cuidado Digital" />
         <title>Cuidado Digital</title>
-        <Link
-          href="https://fonts.googleapis.com/css?family=Poppins"
-          rel="stylesheet"
-        ></Link>
       </Head>
       <header className={styles.header}>
         <h1>CuidadoDigital</h1>
