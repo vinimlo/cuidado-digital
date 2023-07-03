@@ -69,7 +69,7 @@ export default function EmailTest() {
               <td className={styles.description}></td>
             </tr>
             {data.breaches.map((item, index) => (
-              <tr className={styles.row}>
+              <tr className={styles.row} key={index}>
                 <td className={styles.td}>
                   <div className={styles.company}>
                     <Image
