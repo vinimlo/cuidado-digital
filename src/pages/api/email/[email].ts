@@ -20,7 +20,13 @@ export default async function handler(
     },
   };
 
-  const response = await axios.request(options);
+  const response = await axios.request(options).catch(function (error) {
+    if (error.response.status === 404) {
+      res.status(200).json({ breaches: [] });
+    }
+  });
 
-  res.status(200).json({ breaches: response.data });
+  if (response) {
+    res.status(200).json({ breaches: response.data });
+  }
 }
