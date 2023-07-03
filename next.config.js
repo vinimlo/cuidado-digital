@@ -1,4 +1,13 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
-
-module.exports = nextConfig
+module.exports = {
+    images: {
+      remotePatterns: [
+        {
+          protocol: 'https',
+          hostname: 'haveibeenpwned.com',
+          port: '',
+          pathname: '/Content/Images/**',
+        },
+      ],
+    },
+  };
+  

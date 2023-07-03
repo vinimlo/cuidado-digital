@@ -1,16 +1,26 @@
-import Head from "next/head";
-import EmailTest from "@/components/EmailTest";
+import EmailTest from "@/components/EmailTest/EmailTest";
+import styles from "./index.module.css";
+import Layout from "@/features/Layout/Layout";
+import Link from "next/link";
+import { getSortedPostsData } from "@/lib/posts";
+import PostDate from "@/components/PostDate/PostDate";
+import HomeBanner from "@/components/HomeBanner/HomeBanner";
 
-export default function Home() {
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData();
+
+  return {
+    props: {
+      allPostsData,
+    },
+  };
+}
+
+export default function Home({ allPostsData }: any) {
   return (
-    <>
-      <Head>
-        <title>Cuidado Digital</title>
-      </Head>
-      <main>
-        <h1>Cuidado Digital</h1>
-        <EmailTest />
-      </main>
-    </>
+    <Layout>
+      <HomeBanner />
+      <EmailTest />
+    </Layout>
   );
 }

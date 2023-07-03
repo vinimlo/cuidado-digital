@@ -1,16 +1,10 @@
-import Head from "next/head";
-import PasswordTest from "@/components/PasswordTest";
+import PasswordTest from "@/components/PasswordTest/PasswordTest";
+import Layout from "@/features/Layout/Layout";
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>Cuidado Digital</title>
-      </Head>
-      <main>
-        <h1>Cuidado Digital</h1>
-        <PasswordTest />
-      </main>
-    </>
+    <Layout>
+      <PasswordTest />
+    </Layout>
   );
 }

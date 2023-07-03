@@ -1,0 +1,141 @@
+.email_input_container {
+    width: 90%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.email_input_container .email_input {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 8px 0 0 8px;
+    padding: 10px 15px;
+    background-color: #290025;
+    color: #FAFAFA;
+}
+
+.email_input_container .email_input:focus {
+    outline: none;
+}
+
+.email_input_container button {
+    width: 50px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 0 8px 8px 0;
+    color: #FAFAFA;
+    background-color: #4F0147;
+    cursor: pointer;
+}
+
+.results .message {
+    text-align: center;
+    color: #FFF;
+}
+
+.results .message h2 {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.results .message p {
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.results .table {
+    background-color: #290025;
+    color: #FAFAFA;
+    width: 90%;
+    margin: 0 auto;
+    display: table;
+    border-radius: 12px;
+    padding: 15px 25px;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.results .table .row_header {
+    width: 100%;
+    font-weight: 700;
+}
+
+.results .table .row_header .company {
+    width: 35%;
+}
+
+.results .table .row_header .breach_date {
+    width: 15%;
+}
+
+.results .table .row_header .description {
+    width: 50%;
+}
+
+.results .table .row {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 25px 0;
+}
+
+.results .table .row:last-child {
+    border-bottom: none;
+}
+
+.results .table .row .company {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.results .table .row .company .image {
+    width: 50px;
+    height: auto;
+}
+
+.results .table .row .company .name {
+    font-weight: 700;
+    text-decoration: none;
+    color: #FFF;
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.results .table .row .breach_date {
+    text-align: center;
+    padding: 25px 0;
+}
+
+.results .table .row .description {
+    font-weight: 400;
+    color: #FFF;
+    text-align: justify;
+    padding: 10px;
+}
+
+.results .table .row .description a {
+    color: #FFF;
+}
+
+@media screen and (max-width: 650px) {
+    .table tr {
+      display: block;
+    }
+    
+    .table td {
+      display: block;
+    }
+  }
