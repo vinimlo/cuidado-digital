@@ -56,7 +56,12 @@ export default function EmailTest() {
         <input type="email" placeholder="Digite seu email..." ref={inputRef} className={styles.email_input}/>
         <button onClick={handleButtonClick}>Ok</button>
       </div>
-      {data && (
+      {data && data?.breaches.length === 0 && (
+        <div className={styles.no_breaches}>
+          <h2>Oba! Não há vazamentos encontrados para o teu e-mail.</h2>
+        </div>
+      )}
+      {data && data?.breaches.length > 0 && (
         <div className={styles.results}>
           <div className={styles.message}>
             <h2>Oops!</h2>

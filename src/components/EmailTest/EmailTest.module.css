@@ -130,6 +130,11 @@
     color: #FFF;
 }
 
+.no_breaches {
+    width: 100%;
+    text-align: center;
+}
+
 @media screen and (max-width: 650px) {
     .table tr {
       display: block;
