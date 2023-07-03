@@ -1,0 +1,60 @@
+.banner {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 350px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.banner .banner_image {
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.banner .banner_image::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.banner .banner_info {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translate(0, -50%);
+    z-index: 10;
+    text-align: left;
+}
+
+.banner .banner_info h1 {
+    color: #FAFAFA;
+    font-size: 2.5em;
+    padding: 0;
+    padding-bottom: 25px;
+    margin: 0;
+}
+
+.banner .banner_info p {
+    color: #FAFAFA;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.banner .banner_info p mark {
+    background-color: #FAFAFA;
+    color: #212121;
+}

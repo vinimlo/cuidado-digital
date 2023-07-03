@@ -1,0 +1,112 @@
+.container {
+    --header-height: 50px;
+    --footer-height: 50px;
+  }
+
+.header {
+    font-family: 'Poppins';
+    color: #FAFAFA;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: var(--header-height);
+    padding: 25px;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #35012C;
+}
+
+.header h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.4em;
+}
+
+.header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 15px;
+}
+
+.header nav ul li {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.header nav ul li:hover {
+    text-decoration: underline;
+}
+
+.header nav ul li .nav_link {
+    color: #FAFAFA;
+    text-decoration: none;
+}
+
+.hamburguer_container {
+    display: none;
+}
+
+.hamburguer_icon div {
+    width: 30px;
+    height: 4px;
+    background-color: #FAFAFA;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+.main {
+    font-family: 'Poppins';
+    min-height: calc(100svh - var(--header-height) - var(--footer-height));
+}
+
+.main a {
+    color: #FAFAFA;
+}
+
+.footer {
+    width: 100%;
+    height: var(--footer-height);
+    font-family: 'Poppins';
+    color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer .copyleft_symbol {
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 650px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .header nav {
+        padding: 50px 0 15px 0;
+    }
+
+    .header nav ul {
+        flex-direction: column;
+    }
+
+    .header nav ul li {
+        height: 40px;
+    }
+}
