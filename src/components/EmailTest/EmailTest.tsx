@@ -19,7 +19,7 @@ interface ApiResponse {
 async function getBreach(email: string) {
   try {
     const response = await axios
-      .get(`http://localhost:3000/api/email/${email}`)
+      .get(`${process.env.NEXT_PUBLIC_CURRENT_HOST}/api/email/${email}`)
       .then((response) => {
         return response.data;
       })
