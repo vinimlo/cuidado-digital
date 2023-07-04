@@ -10,3 +10,7 @@
     padding: 15px 0;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
+
+.spacer {
+    padding: 25px 0;
+}

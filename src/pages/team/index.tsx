@@ -7,12 +7,12 @@ export async function getStaticProps() {
     {
       id: 1,
       name: "Jarbas Tavares Santos",
-      photo: "/images/members/user.png",
+      photo: "/images/members/jarbas_tavares.jpg",
     },
     {
       id: 2,
       name: "Jorge Ferreira Gomes Da Silva",
-      photo: "/images/members/user.png",
+      photo: "/images/members/jorge_gomes.jpg",
     },
     {
       id: 3,
@@ -22,7 +22,7 @@ export async function getStaticProps() {
     {
       id: 4,
       name: "Vinícius Félix Santos De Jesus",
-      photo: "/images/members/user.png",
+      photo: "/images/members/vinicius_felix.jpg",
     },
     {
       id: 5,
@@ -42,6 +42,7 @@ export default function Team({ teamData }: any) {
   return (
     <Layout>
       <div className={styles.container}>
+        <div className={styles.spacer}></div>
         <div className={styles.cards}>
           {teamData.map(({ id, name, photo }: any) => (
             <TeamMember photo={photo} name={name} key={id} />
