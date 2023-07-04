@@ -28,6 +28,11 @@ export default function Layout({ children }: Props) {
                 Conteúdos
               </Link>
             </li>
+            <li>
+              <Link href="/team" className={styles.nav_link}>
+                Equipe
+              </Link>
+            </li>
           </ul>
         </nav>
       </header>

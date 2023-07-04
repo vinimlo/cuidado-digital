@@ -16,7 +16,7 @@ export async function getStaticProps() {
   };
 }
 
-export default function Home({ allPostsData }: any) {
+export default function Content({ allPostsData }: any) {
   const images = [
     {
       original: "/images/booklets/1.png",
