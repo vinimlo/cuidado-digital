@@ -1,10 +1,31 @@
+@font-face {
+    font-family: "Poppins";
+    src: url('../../assets/fonts/poppins/Poppins-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url('../../assets/fonts/poppins/Poppins-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url('../../assets/fonts/poppins/Poppins-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
 .container {
+    font-family: 'Poppins';
     --header-height: 50px;
     --footer-height: 50px;
-  }
+}
 
 .header {
-    font-family: 'Poppins';
     color: #FAFAFA;
     display: flex;
     justify-content: flex-start;
@@ -69,7 +90,6 @@
 }
 
 .main {
-    font-family: 'Poppins';
     min-height: calc(100svh - var(--header-height) - var(--footer-height));
 }
 
@@ -80,7 +100,6 @@
 .footer {
     width: 100%;
     height: var(--footer-height);
-    font-family: 'Poppins';
     color: #FAFAFA;
     display: flex;
     justify-content: center;
