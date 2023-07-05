@@ -1,6 +1,7 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 import Link from 'next/link';
- 
+import { Analytics } from '@vercel/analytics/react';
+
 export default function Document() {
   return (
     <Html>
@@ -14,6 +15,7 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+        <Analytics />
       </body>
     </Html>
   )
